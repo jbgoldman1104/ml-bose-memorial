@@ -451,7 +451,7 @@ In the [package.json](package.json) file you can specify the port the Front End 
 
 **API only**
 
-API will run by default in port 3000
+API will run by default in port 3002
 
 ```sh
   npm run start:api

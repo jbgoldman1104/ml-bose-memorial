@@ -1,7 +1,7 @@
 import { InputConfig } from '@kleeen/kleeen-api';
 
 export const config: InputConfig = {
-  apiPort: 3000,
+  apiPort: 3002,
   apiPortWS: 3001,
   isFlexibleFind: true,
   isInMemory: false,

@@ -15,7 +15,7 @@ updateBackendEnvironmentVariables () {
   echo 'Update backend environment variables'
 
   ENVIRONMENT_FILENAME=./libs/environment/src/environments/environment
-  API_URL_LOCAL=http://localhost:3000
+  API_URL_LOCAL=http://localhost:3002
 
   API_URL_PROD=$(aws cloudformation describe-stacks --stack-name $PROTOTYPE_STACK_NAME --query 'Stacks[0].Outputs[?OutputKey==`ServiceEndpoint`].OutputValue' --output text)
   O="${API_URL_LOCAL}" N="${API_URL_PROD}" perl -pi -e's/\Q$ENV{O}/$ENV{N}/g' "${ENVIRONMENT_FILENAME}.ts"

@@ -1357,7 +1357,7 @@
     "dataType": "double",
     "displayName": "SquareFootage",
     "editable": true,
-    "format": { "min": 500, "max": 3000 },
+    "format": { "min": 500, "max": 3002 },
     "formatType": "double",
     "id": 113114,
     "multiple": true,
